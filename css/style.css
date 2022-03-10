@@ -4,3 +4,92 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Common and utility */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+.clearfix:after{
+    clear: both;
+    content: "";
+    display: table;
+}
+/* .container{
+    width: 99%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    height: 100%;
+} */
+img{
+	height: 100%;
+
+}
+a{
+	text-decoration: none;
+}
+.col-left{
+    float: left;
+}
+.col-right{
+    float: right;
+}
+/* Buttoms */
+[class*="btn"]{
+    /* padding: 0.3rem 1rem; */
+    
+    font-weight: 600;
+
+}
+[class$="btn-small"]{
+    /* padding: 0.3rem 1rem; */
+    
+    padding: 0.15em 1rem;
+
+}
+/* Color  */
+[class^="blue-btn"]{
+    background-color: #2355FF;
+    color: white;
+}
+/* hover btn */
+[class^="blue-btn"]:hover{
+    background-color: #44AAFF;
+}
+/* NAV  */
+nav{
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1.7rem;
+    background-color: white;
+}
+nav li, nav ul, nav img, nav a{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.3em auto;
+}
+nav .col-left li,nav .col-left img{
+    margin-right: 2rem;
+    
+}
+nav .col-left ul li:last-child{
+    margin-right: 0;
+}
+nav .col-right li,nav .col-right img, .col-right > a{
+    margin-left: 2rem;
+    
+}
+nav .col-right ul li:first-child{
+    margin-left: 0;
+}
+nav li a{
+    color: black;
+    font-weight: 500 ;
+}
+nav li a:hover{
+    text-decoration: underline;
+}
