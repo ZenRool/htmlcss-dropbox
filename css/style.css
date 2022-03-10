@@ -1,5 +1,5 @@
 /* RESET  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,94 +9,103 @@ html {
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
 }
-.clearfix:after{
+.clearfix:after {
     clear: both;
     content: "";
     display: table;
 }
-/* .container{
+/* .container {
     width: 99%;
     max-width: 1280px;
     margin: 0 auto;
 
     height: 100%;
 } */
-img{
+img {
 	height: 100%;
 
 }
-a{
+a {
 	text-decoration: none;
 }
-.col-left{
+.col-left {
     float: left;
 }
-.col-right{
+.col-right {
     float: right;
 }
+.big-container {
+    width: 99%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
 /* Buttoms */
-[class*="btn"]{
+[class*="btn"] {
     /* padding: 0.3rem 1rem; */
     
     font-weight: 600;
 
 }
-[class$="btn-small"]{
+[class$="btn-small"] {
     /* padding: 0.3rem 1rem; */
     
-    padding: 0.15em 1rem;
+    padding: 0.15rem 1.3rem;
+
+}
+[class$="btn-big"] {
+    /* padding: 0.3rem 1rem; */
+    
+    padding: 0.6rem 3rem;
 
 }
 /* Color  */
-[class^="blue-btn"]{
+[class^="blue-btn"] {
     background-color: #2355FF;
     color: white;
 }
 /* hover btn */
-[class^="blue-btn"]:hover{
+[class^="blue-btn"]:hover {
     background-color: #44AAFF;
 }
 /* NAV  */
-nav{
+nav {
     width: 100%;
-    height: fit-content;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     padding: 0 1.7rem;
     background-color: white;
 }
-nav li, nav ul, nav img, nav a{
+nav li, nav ul, nav img, nav a {
     list-style-type: none;
     display: inline-block;
     vertical-align: middle;
-    margin: 0.3em auto;
+    /* margin: 0.3em auto; */
 }
-nav img{
-    vertical-align: middle;
-}
-nav .col-left li,nav .col-left img{
-    margin-right: 2rem;
+nav .col-left li,nav .col-left img {
+    margin-right: 1.5rem;
     
 }
-nav .col-left ul li:last-child{
+nav .col-left ul li:last-child {
     margin-right: 0;
 }
-nav .col-right li,nav .col-right img, .col-right > a{
-    margin-left: 2rem;
+nav .col-right li,nav .col-right img, .col-right > a {
+    margin-left: 1.5rem;
     
 }
-nav .col-right ul li:first-child{
+nav .col-right ul li:first-child {
     margin-left: 0;
 }
-nav li a{
+nav li a , nav ul {
     color: black;
     font-weight: 500 ;
     height: 100%;
     line-height: 60px;
     position: relative;
 }
-nav li a::after {
+nav li a::after  {
     content: "";
     position: absolute;
     bottom: 0;
@@ -105,8 +114,52 @@ nav li a::after {
     
 }
 
-nav li a:hover::after{
+nav li a:hover::after {
 
     border-bottom: 3px solid black;
 
+}
+/* Jumbo */
+.jumbo {
+    margin-top: 60px;
+    background-color: #b4d0e7;
+    height: 750px;
+}
+h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+.jumbo .clearfix {
+    margin-top: 3rem;
+}
+.jumbo .col-left {
+    width: 40%;
+    padding-right: 14%;
+    
+    height: 100%;
+}
+.jumbo .col-left p {
+    margin-bottom: 2rem;
+}
+.jumbo .col-left div {
+    margin-top: 1.5rem;
+}
+.jumbo a i {
+    margin-top: 2rem;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: black;
+}
+
+/* Col Right  */
+.jumbo .col-right {
+    width: 60%;
+}
+.jumbo .col-right img {
+    width: 100%;
+    height: auto;
+}
+
+main{
+    padding: 0 40%;
 }
