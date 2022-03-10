@@ -63,7 +63,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1.7rem;
+    padding: 0 1.7rem;
     background-color: white;
 }
 nav li, nav ul, nav img, nav a{
@@ -71,6 +71,9 @@ nav li, nav ul, nav img, nav a{
     display: inline-block;
     vertical-align: middle;
     margin: 0.3em auto;
+}
+nav img{
+    vertical-align: middle;
 }
 nav .col-left li,nav .col-left img{
     margin-right: 2rem;
@@ -89,7 +92,21 @@ nav .col-right ul li:first-child{
 nav li a{
     color: black;
     font-weight: 500 ;
+    height: 100%;
+    line-height: 60px;
+    position: relative;
 }
-nav li a:hover{
-    text-decoration: underline;
+nav li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+nav li a:hover::after{
+
+    border-bottom: 3px solid black;
+
 }
