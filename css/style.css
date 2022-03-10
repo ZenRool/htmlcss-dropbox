@@ -59,7 +59,7 @@ h3 {
     padding: 3rem 0;
 }
 .skinny-container {
-    width: 80%;
+    width: 96%;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 8rem;
@@ -265,7 +265,8 @@ main {
 }
 .tax {
     color: #AAA;
-    margin-bottom: 4rem;
+    font-size: 0.9rem;
+    margin-bottom: 3.5rem;
 }
 .vantage {
 
