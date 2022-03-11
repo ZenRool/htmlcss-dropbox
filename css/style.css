@@ -59,7 +59,7 @@ h3 {
     padding: 3rem 0;
 }
 .skinny-container {
-    width: 96%;
+    width: 97%;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 8rem;
@@ -67,7 +67,7 @@ h3 {
 /* Buttoms */
 [class*="btn"] {
     /* padding: 0.3rem 1rem; */
-    
+    display: inline-block;
     font-weight: 600;
 
 }
@@ -105,9 +105,10 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0 1.7rem;
+    padding: 0 1.6rem;
     background-color: white;
     z-index: 10;
+    font-size: 90%;
 }
 nav li, nav ul, nav img, nav a {
     list-style-type: none;
@@ -116,14 +117,14 @@ nav li, nav ul, nav img, nav a {
     /* margin: 0.3em auto; */
 }
 nav .col-left li,nav .col-left img {
-    margin-right: 1.5rem;
+    margin-right: 1.3rem;
     
 }
 nav .col-left ul li:last-child {
     margin-right: 0;
 }
-nav .col-right li,nav .col-right img, .col-right > a {
-    margin-left: 1.5rem;
+nav .col-right li,nav .col-right img, nav .col-right > a {
+    margin-left: 1.3rem;
     
 }
 nav .col-right ul li:first-child {
@@ -237,16 +238,21 @@ main {
 /* Tre colonne piano tariffario*/
 .three-col {
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .three-col .col-left, .three-col .col-right {
-    width: 30%;
+    width: 32%;
 }
 .three-col .col-left {
-    margin-right: 5%;
+    margin-right: 2%;
 }
 .your-plane .three-col .col-left,.your-plane .three-col .col-right {
+    min-height: 1080px;
+}
+.your-plane .three-col .col-left,.your-plane .three-col .col-right, .single-col {
+    
     border: 1px solid #DDD;
-    height: 1080px;
+
 }
 .your-plane .plane-type {
     text-align: center;
@@ -274,26 +280,43 @@ main {
     margin-bottom: 2rem;
 }
 
-.vantage li{
+.vantage li {
     margin-left: -15px;
     margin-bottom: 1rem; 
 
 }
-.col-plane-content .blue-btn-big{
+.col-plane-content .blue-btn-big {
     width: 100%;
     display: block;
     margin-bottom: 2rem;
 }
-.highlights{
+.highlights {
     margin-top: 2rem;
 }
 
-.highlights li{
+.highlights li {
     list-style: none;
     margin-left: -15px;
     margin-bottom: 1rem; 
 }
-.highlights li i{
+.highlights li i {
     color: #2196F3;
 
+}
+/* Colonna in basso singola */
+.single-col {
+    min-height: 270px;
+}
+
+.single-col .clearfix .col-left {
+    width: 70%;
+}
+.single-col .clearfix .col-right {
+    width: 30%;
+}
+.single-col p {
+    padding-top: 2rem;
+}
+.single-col h3 {
+    padding-top: 0;
 }
