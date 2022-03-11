@@ -338,11 +338,26 @@ main {
     width: 48%;
     padding: 2rem;
 }
-.cont-partner img {
+.cont-partner img, .operation_list img{
     width: 100%;
     height: auto;
 }
 .cont-partner p {
     line-height: 2em;
     margin-bottom: 2rem;
+}
+/* Lista operazioni  */
+.operation_list {
+    margin-top: 3rem;
+}
+.operation_list .clearfix {
+    margin-bottom: 4rem;
+}
+.operation_list .col-left {
+    width: calc(100%/3);
+    padding-right: 3rem;
+}
+.operation_list .col-right {
+    width: calc(100%/3);
+    padding-left: 3rem;
 }
