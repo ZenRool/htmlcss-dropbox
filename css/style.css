@@ -41,7 +41,7 @@ h2 {
     padding-bottom: 2rem;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     padding: 1rem 0;
 }
@@ -69,27 +69,33 @@ h3 {
     /* padding: 0.3rem 1rem; */
     display: inline-block;
     font-weight: 600;
-
+    text-align: center;
 }
 [class$="btn-small"] {
     /* padding: 0.3rem 1rem; */
     
-    padding: 0.15rem 1.3rem;
+    padding: 0.15rem 1rem;
+    
 
 }
 [class$="btn-big"] {
     /* padding: 0.3rem 1rem; */
     
-    padding: 0.6rem 3rem;
-
+    padding: 0.6rem 1.5rem;
+    
 }
 /* Color  */
 [class^="blue-btn"] {
     background-color: #2355FF;
     color: white;
 }
+[class^="white-btn"] {
+    background-color: #FFF;
+    color: black;
+    border: 1px solid black;
+}
 /* hover btn */
-[class^="blue-btn"]:hover {
+[class^="blue-btn"]:hover , [class^="white-btn"]:hover  {
     background-color: #44AAFF;
 }
 /* small line  */
@@ -319,4 +325,24 @@ main {
 }
 .single-col h3 {
     padding-top: 0;
+}
+
+/* Contatta un parten */
+.cont-partner {
+    margin-top: 4rem;
+}
+.cont-partner .col-left {
+    width: 52%;
+}
+.cont-partner .col-right {
+    width: 48%;
+    padding: 2rem;
+}
+.cont-partner img {
+    width: 100%;
+    height: auto;
+}
+.cont-partner p {
+    line-height: 2em;
+    margin-bottom: 2rem;
 }
