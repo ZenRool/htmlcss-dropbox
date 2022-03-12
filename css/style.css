@@ -506,14 +506,35 @@ main {
     width: 2%;
 }
 
-.faq .clearfix:hover .none{
+.faq .clearfix:hover .none {
     display: block;
 }
-.faq .clearfix:hover .to-none{
+.faq .clearfix:hover .to-none {
     display: none;
 }
-.faq .none p{
+.faq .none p {
     color: #999;
     padding-bottom: 2rem;
 }
+.faq {
+    padding-bottom: 4rem;
+}
 
+/* Footer */
+footer{
+    background-color: #000;
+    color: white;
+}
+footer .col-left{
+    width: 20%;
+}
+footer li{
+    list-style-type: none;
+    line-height: 1.8rem;
+}
+footer a{
+    color: inherit;
+}
+footer li a:hover{
+    text-decoration: underline;
+}
