@@ -36,7 +36,7 @@ h1 {
 }
 h2 {
     padding-left: 0.3rem;
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 900;
     padding-bottom: 2rem;
 }
@@ -104,6 +104,37 @@ h3 {
     border-bottom: 1px solid #DDD ;
     margin: 3rem 0;
 }
+/* Colori */
+/* Colori da spostare */
+.l-olive{ 
+    background-color: #A2D39B;
+}
+.azur {
+    background-color: #2196F3;
+}
+.bedge {
+    background-color: #61082b;
+}
+.red {
+    background-color: red;
+}
+.d-red {
+    background-color: #E00000;
+}
+.l-azur {
+    /* Da riutilizzare dopo  */
+    background-color: #95DBFD;
+}
+.d-azur {
+    background-color: #00009F;
+}
+.yello-orange {
+    background-color: #F0CD00;
+}
+.gray {
+    background-color: #F7F7F7;
+}
+
 /* NAV  */
 nav {
     width: 100%;
@@ -360,4 +391,70 @@ main {
 .operation_list .col-right {
     width: calc(100%/3);
     padding-left: 3rem;
+}
+/* 500000 teams  */
+.users-team h2 {
+    padding-right: 50%;
+}
+.quadrato {
+    position: relative;
+    width: 15vw;
+    /* height: auto; */
+    height: 15vw;
+    cursor: pointer;
+    position: relative;
+    /* background-color: red; */
+}
+.quadrato::after{
+
+    content: "";
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    box-sizing: content-box;
+    
+}
+
+.quadrato:hover::after {
+
+    border: 10px solid rgba(255, 255, 255, 0.5);
+
+}
+.quadrato img {
+    width: 50%;
+    height: auto;
+
+    filter: invert(1);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.users-team .clearfix {
+    margin-top: 3rem;
+}
+.users-team .col-left {
+    width: 15vw;
+}
+/* colonna centrale */
+.users-team .sponsor {
+    padding: 6rem 4rem 0 4rem;
+    height: 30vw;
+    overflow-y: auto;
+    width: calc(100% - 60vw);
+
+}
+.sponsor img {
+    height: 70px;
+    /* width: auto; */
+}
+.sponsor p{
+    margin-top: 6rem;
 }
