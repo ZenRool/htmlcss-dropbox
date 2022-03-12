@@ -94,9 +94,18 @@ h3 {
     color: black;
     border: 1px solid black;
 }
+/* extra */
+[class^="white-bordless-btn"] {
+    background-color: #FFF;
+    color: black;
+    width: 100%;
+}
 /* hover btn */
 [class^="blue-btn"]:hover , [class^="white-btn"]:hover  {
     background-color: #44AAFF;
+}
+[class^="white-bordless-btn"]:hover {
+    background-color: #EEE;
 }
 /* small line  */
 .small-line {
@@ -122,8 +131,8 @@ h3 {
     background-color: #E00000;
 }
 .l-azur {
-    /* Da riutilizzare dopo  */
-    background-color: #95DBFD;
+ 
+    background-color: #b4d0e7;
 }
 .d-azur {
     background-color: #00009F;
@@ -191,7 +200,6 @@ nav li a:hover::after {
 /* Jumbo */
 .jumbo {
     margin-top: 60px;
-    background-color: #b4d0e7;
     height: 750px;
 }
 .jumbo .clearfix {
@@ -455,6 +463,19 @@ main {
     height: 70px;
     /* width: auto; */
 }
-.sponsor p{
+.sponsor p {
     margin-top: 6rem;
+}
+/* Sezione celeste try-it */
+.try-it .skinny-container{
+    padding: 7rem 0;
+}
+.try-it .col-left {
+    width: 55%;
+}
+.try-it .col-left h2{
+    color: #32001B;
+}
+.try-it .col-right {
+    width: 25%;
 }
