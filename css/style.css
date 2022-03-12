@@ -15,6 +15,9 @@ html {
     content: "";
     display: table;
 }
+.none{
+    display: none;
+}
 
 img {
 	height: 100%;
@@ -41,9 +44,14 @@ h2 {
     padding-bottom: 2rem;
 }
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 800;
     padding: 1rem 0;
+}
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
 }
 /* Colomns */
 .col-left {
@@ -479,3 +487,33 @@ main {
 .try-it .col-right {
     width: 25%;
 }
+
+/* Domande */
+
+.faq .clearfix {
+    
+    border-bottom: 1px solid #CCC;
+
+}
+.faq .clearfix:first-of-type {
+    border-top: 1px solid #CCC;
+
+}
+.faq .col-left {
+    width: 80%;
+}
+.faq .col-right {
+    width: 2%;
+}
+
+.faq .clearfix:hover .none{
+    display: block;
+}
+.faq .clearfix:hover .to-none{
+    display: none;
+}
+.faq .none p{
+    color: #999;
+    padding-bottom: 2rem;
+}
+
