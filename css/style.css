@@ -109,10 +109,13 @@ h4 {
     width: 100%;
 }
 /* hover btn */
-[class^="blue-btn"]:hover , [class^="white-btn"]:hover  {
+[class^="blue-btn"]:hover  {
     background-color: #44AAFF;
 }
-[class^="white-bordless-btn"]:hover {
+[class^="white-btn"]:hover {
+    text-decoration: underline;
+}
+[class^="white-bordless-btn"]:hover ,  [class^="white-btn"]:hover {
     background-color: #EEE;
 }
 /* small line  */
@@ -177,21 +180,21 @@ nav .col-left li,nav .col-left img {
 nav .col-left ul li:last-child {
     margin-right: 0;
 }
-nav .col-right li,nav .col-right img, nav .col-right > a {
+nav > .col-right > ul > li,nav > .col-right > img, nav > .col-right > a {
     margin-left: 1.3rem;
     
 }
 nav .col-right ul li:first-child {
     margin-left: 0;
 }
-nav li a , nav ul {
+nav li a , nav li {
     color: black;
     font-weight: 500 ;
     height: 100%;
     line-height: 60px;
     position: relative;
 }
-nav li a::after  {
+nav li::after  {
     content: "";
     position: absolute;
     bottom: 0;
@@ -200,11 +203,45 @@ nav li a::after  {
     
 }
 
-nav li a:hover::after {
+nav >.col-left > ul > li:hover::after , nav >.col-right > ul > li:hover::after{
 
     border-bottom: 3px solid black;
 
 }
+
+/* Menu a tendina */
+nav li:hover ul {
+    background-color: #fDfDfD;
+    position: absolute;
+    left: -2rem;
+
+}
+nav li:hover ul {
+
+    display: block;
+
+}
+nav li ul li {
+    min-width: 100%;
+    margin-left: 0;
+    width: max-content;
+    border-bottom: 1px solid #EFEFEF;
+}
+nav li ul li a {
+    padding: 0.3rem 0.9rem 0.3rem 0.5rem;
+    width: 100%;
+}
+
+nav li ul li:hover a{
+    background-color: #F3F3F3;
+    text-decoration: underline;
+}
+nav li ul li a:focus{
+    background-color: #FAFAFA;
+    
+    text-decoration: none;
+}
+
 /* Jumbo */
 .jumbo {
     margin-top: 60px;
@@ -300,7 +337,9 @@ main {
     margin-right: 2%;
 }
 .your-plane .three-col .col-left,.your-plane .three-col .col-right {
-    min-height: 1080px;
+    /* min-height: 1080px; */
+    height: 1080px;
+    overflow-y: auto;
 }
 .your-plane .three-col .col-left,.your-plane .three-col .col-right, .single-col {
     
@@ -521,20 +560,27 @@ main {
 }
 
 /* Footer */
-footer{
+footer {
     background-color: #000;
     color: white;
 }
-footer .col-left{
+footer .col-left {
     width: 20%;
 }
-footer li{
+footer li {
     list-style-type: none;
     line-height: 1.8rem;
 }
-footer a{
+footer a {
     color: inherit;
 }
-footer li a:hover{
+footer li a:hover {
     text-decoration: underline;
+}
+footer .large-container>a {
+    box-sizing: content-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+footer .large-container>a:focus {
+    border: 1px solid white;
 }
